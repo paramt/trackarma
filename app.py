@@ -1,6 +1,7 @@
 import praw
 import matplotlib.pyplot as plt
 import constants
+plt.switch_backend('Agg')
 
 reddit = praw.Reddit('Bot')
 redditor = praw.models.Redditor(reddit, name=constants.reddit_name)
