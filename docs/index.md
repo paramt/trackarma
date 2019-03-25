@@ -1,16 +1,13 @@
-# Karma Tracker
-A simple python script that tracks a Reddit user's karma over time.
-
-## Example
-This chart displays my live Reddit karma 
-and automatically updates it every day using **trackarma**.
+The script logs karma daily and dynamically generates a chart 
+with the data it's collected. Here's an example of my account &ndash; 
+[/u/hypnotic-hippo](https://www.reddit.com/user/hypnotic-hippo). 
 
 ![Image](http://206.167.183.187/chart.png)
 
 ## Setup
 
 #### 1. Clone the repo
-`git clone https://github.com/paramt/karma-tracker.git`
+`git clone https://github.com/paramt/trackarma.git`
 
 #### 2. Install dependencies
 - `pip install praw`
