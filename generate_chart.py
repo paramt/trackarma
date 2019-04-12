@@ -20,10 +20,10 @@ karma_totals = [int(x) for x in karma_totals]
 ylabel = ""
 
 if max(karma_totals) > 1000000:
-    karma_totals = [x/1000000 for x in karma_totals]
+    karma_totals = [int(x)/1000000 for x in karma_totals]
     ylabel = "(millions)"
 elif max(karma_totals) > 1000:
-    karma_totals = [x/1000 for x in karma_totals]
+    karma_totals = [int(x)/1000 for x in karma_totals]
     ylabel = "(thousands)"
 
 # Create chart
