@@ -22,10 +22,10 @@ ylabel = ""
 
 try:
     if max(karma_totals) > 1000000:
-        karma_totals = [int(x)/1000000 for x in karma_totals]
+        karma_totals = [int(x) / 1000000 for x in karma_totals]
         ylabel = "(millions)"
     elif max(karma_totals) > 1000:
-        karma_totals = [int(x)/1000 for x in karma_totals]
+        karma_totals = [int(x) / 1000 for x in karma_totals]
         ylabel = "(thousands)"
 except IndexError:
     pass
