@@ -1,6 +1,7 @@
 import constants
 import datetime
-import matplotlib.pyplot as plt, matplotlib.dates as mpd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mpd
 
 plt.switch_backend('Agg')
 plt.rcParams["figure.figsize"] = (10, 6)
