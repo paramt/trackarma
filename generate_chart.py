@@ -19,18 +19,21 @@ karma_totals = [int(x) for x in karma_totals]
 
 ylabel = ""
 
-if max(karma_totals) > 1000000:
-    karma_totals = [int(x)/1000000 for x in karma_totals]
-    ylabel = "(millions)"
-elif max(karma_totals) > 1000:
-    karma_totals = [int(x)/1000 for x in karma_totals]
-    ylabel = "(thousands)"
+try:
+    if max(karma_totals) > 1000000:
+        karma_totals = [int(x)/1000000 for x in karma_totals]
+        ylabel = "(millions)"
+    elif max(karma_totals) > 1000:
+        karma_totals = [int(x)/1000 for x in karma_totals]
+        ylabel = "(thousands)"
+except IndexError:
+    pass
 
 # Create chart
 fig, ax = plt.subplots()
 plt.title(constants.chart_title)
 plt.xlabel("Time (UTC)")
-plt.ylabel('Karma ' + ylabel)
+plt.ylabel('Karma', ylabel)
 fig.autofmt_xdate()
 plt.plot_date(formatted_dates, karma_totals, marker="", linestyle="-", lw=constants.width, color=constants.color)
 ax.grid(constants.show_grid)
