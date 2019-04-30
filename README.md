@@ -1,5 +1,8 @@
 # Trackarma <img align="left" width=42 src="https://trackarma.tk/favicon.png">
 
+![PEP8](https://img.shields.io/travis/paramt/trackarma.svg?style=for-the-badge&label=PEP8)
+![Uptime](https://img.shields.io/uptimerobot/ratio/m782558311-0812dc9f1faff9a309c136ae.svg?style=for-the-badge)
+
 A simple python script that uses [PRAW](https://praw.readthedocs.io/en/latest/) 
 to track Reddit karma. The script logs an account's total karma and dynamically 
 generates a chart with the data it's collected. Below is an example using data 
