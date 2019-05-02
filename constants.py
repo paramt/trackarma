@@ -1,5 +1,8 @@
-reddit_name = '[YOUR_REDDIT_USERNAME]'              # [REQUIRED] reddit username
-chart_title = reddit_name + '\'s Karma Over Time'   # [OPTIONAL] chart title
-show_grid = False                                   # [OPTIONAL] chart grids
-color = "#ff5349"                                   # [OPTIONAL] line color
-width = 3                                           # [OPTIONAL] line width
+# Required
+reddit_name = '[YOUR_REDDIT_USERNAME]'              # reddit username
+
+# Optional
+chart_title = reddit_name + '\'s Karma Over Time'   # chart title
+show_grid = False                                   # chart grids
+color = "#ff5349"                                   # line color
+width = 3                                           # line width

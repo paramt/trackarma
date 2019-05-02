@@ -15,7 +15,13 @@ with open('data/karma-total.txt', 'r') as file:
     karma_totals = list(filter(None, file.read().split("\n")))
 
 # Format everything
-formatted_dates = [mpd.date2num(datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S.%f')) for date in dates]
+formatted_dates = []
+
+for date in dates:
+    date = datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S.%f')
+    mpl_dates = mpd.date2num(date)
+    formatted_dates.append(mpl_dates)
+
 karma_totals = [int(x) for x in karma_totals]
 
 ylabel = ""
@@ -36,9 +42,16 @@ plt.title(constants.chart_title)
 plt.xlabel("Time (UTC)")
 plt.ylabel('Karma' + ylabel)
 fig.autofmt_xdate()
-plt.plot_date(formatted_dates, karma_totals, marker="", linestyle="-", lw=constants.width, color=constants.color)
+
+# Plot data
+plt.plot_date(formatted_dates, karma_totals,
+              marker="", linestyle="-",
+              lw=constants.width, color=constants.color)
+
+# Configure settings
 ax.grid(constants.show_grid)
 plt.xticks()
 locator = mpd.AutoDateLocator(interval_multiples=False)
 ax.xaxis.set_major_locator(locator)
+
 plt.savefig('data/chart.png')
