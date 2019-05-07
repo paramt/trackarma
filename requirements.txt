@@ -1,1 +1,2 @@
 matplotlib==3.0.3
+praw==6.1.1
