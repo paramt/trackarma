@@ -10,11 +10,11 @@ def main():
 
     # Open dates.txt
     with open("data/dates.txt", "r") as file:
-        dates = list(filter(None, file.read().split("\n")))
+        dates = file.readlines()
 
     # Open karma-total.txt
     with open('data/karma-total.txt', 'r') as file:
-        karma_totals = list(filter(None, file.read().split("\n")))
+        karma_totals = file.readlines()
 
     # Format everything
     formatted_dates = []
