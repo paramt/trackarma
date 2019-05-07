@@ -18,7 +18,7 @@ def main(usePreset: bool, reddit_name=constants.reddit_name):
 
     # Add datetime to dates.txt
     with open("data/dates.txt", "r") as file:
-        dates = file.readlines()
+        dates = file.read().splitlines()
 
     dates.append(str(now))
 
@@ -28,7 +28,7 @@ def main(usePreset: bool, reddit_name=constants.reddit_name):
 
     # Add line to karma-delta.txt
     with open('data/karma-total.txt', 'r') as file:
-        karma_totals = file.readlines()
+        karma_totals = file.read().splitlines()
 
         try:
             karma_delta = karma_total - int(karma_totals[-1])
