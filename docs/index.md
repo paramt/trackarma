@@ -1,4 +1,4 @@
-[![Build](https://img.shields.io/travis/paramt/trackarma.svg?style=for-the-badge)](https://travis-ci.org/paramt/trackarma)
+[![Build](https://img.shields.io/travis/paramt/trackarma/master.svg?style=for-the-badge)](https://travis-ci.org/paramt/trackarma)
 [![Uptime](https://img.shields.io/uptimerobot/ratio/m782558311-0812dc9f1faff9a309c136ae.svg?style=for-the-badge)](https://status.param.me/782558311)
 
 The script logs an account's total karma and dynamically
