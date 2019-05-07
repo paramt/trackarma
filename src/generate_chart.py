@@ -1,7 +1,7 @@
-import constants
 import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mpd
+import constants
 
 
 def main():
