@@ -4,4 +4,4 @@ before_install:
     - pip install  -r requirements.txt
 
 script:
-    - python generate_chart.py
+    - python test.py
