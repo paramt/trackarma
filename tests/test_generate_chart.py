@@ -1,2 +1,2 @@
-import generate_chart
+from src import generate_chart
 generate_chart.main()
