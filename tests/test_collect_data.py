@@ -1,2 +1,4 @@
 from src import collect_data
-collect_data.main(False, "hypnotic-hippo")
+
+def test():
+  collect_data.main(False, "hypnotic-hippo")
