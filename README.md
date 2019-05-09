@@ -2,6 +2,7 @@
 
 [![Build](https://img.shields.io/travis/paramt/trackarma/master.svg?style=for-the-badge)](https://travis-ci.org/paramt/trackarma)
 [![Uptime](https://img.shields.io/uptimerobot/ratio/m782558311-0812dc9f1faff9a309c136ae.svg?style=for-the-badge)](https://status.param.me/782558311)
+[![CodeFactor](https://www.codefactor.io/repository/github/paramt/trackarma/badge/?style=for-the-badge)](https://www.codefactor.io/repository/github/paramt/trackarma)
 
 A simple python script that uses [PRAW](https://praw.readthedocs.io/en/latest/)
 to track Reddit karma. The script logs an account's total karma and dynamically
