@@ -4,7 +4,8 @@ install:
     - pip install  -r requirements.txt
 
 script:
-    - pytest -v --cov=./src
+    - cd src
+    - python -m pytest ../tests -v --cov=./src
 
 after_success:
   - codecov

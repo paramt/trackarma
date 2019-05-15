@@ -1,7 +1,7 @@
 import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mpd
-from src import constants
+import constants
 
 
 def main():
