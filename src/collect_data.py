@@ -1,7 +1,7 @@
 import os
 import datetime
 import praw
-import constants
+import src.constants as constants
 
 
 def main(usePreset: bool, reddit_name=constants.reddit_name):
