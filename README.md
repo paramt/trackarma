@@ -50,5 +50,6 @@ To generate the chart, run `sudo python -m src.generate_chart`. The live example
 The script will output everything in `data/`
 
 - `chart.png` &ndash; a line graph displaying the Redditor's karma over time
-- `karma-total.txt` &ndash; a record of the Redditor's karma over time, separated with newlines
-- `karma-delta.txt` &ndash; a record of the Redditor's karma gain over time, separated with newlines
+- `dates.txt`&ndash; the datetime entries of each time `collect_data.py` ran 
+- `karma-total.txt` &ndash; a record of the Redditor's karma over time
+- `karma-delta.txt` &ndash; a record of the Redditor's karma gain over time
