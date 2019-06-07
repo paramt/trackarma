@@ -53,3 +53,6 @@ The script will output everything in `data/`
 - `dates.txt`&ndash; the datetime entries of each time `collect_data.py` ran 
 - `karma-total.txt` &ndash; a record of the Redditor's karma over time
 - `karma-delta.txt` &ndash; a record of the Redditor's karma gain over time
+
+## License
+This project is licensed under the [MIT license](LICENSE). You are free to use, modify, and distribute the source code as long as you include the original license file.
