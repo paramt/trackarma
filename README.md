@@ -46,7 +46,7 @@ user_agent=Karma Tracker Bot 1.0
 Run `sudo python -m src.collect_data` at a constant interval using [Crontab](https://www.howtogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-to-crontab-files/) on Linux or  [Task Scheduler](http://theautomatic.net/2017/10/03/running-python-task-scheduler/) on Windows.
 To generate the chart, run `sudo python -m src.generate_chart`. The live example is running both commands every minute, but you may choose to run them at any interval
 
-## Output
+#### Output
 The script will output everything in `data/`
 
 - `chart.png` &ndash; a line graph displaying the Redditor's karma over time
