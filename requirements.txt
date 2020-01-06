@@ -1,4 +1,4 @@
 matplotlib==3.1.2
-praw==6.4.0
+praw==6.5.0
 pytest-cov
 codecov
