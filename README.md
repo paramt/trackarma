@@ -1,4 +1,4 @@
-# Trackarma <img align="left" width=42 src="https://trackarma.tk/favicon.png">
+# Trackarma <img align="left" width=42 src="https://www.param.me/trackarma/favicon.png">
 
 [![Build](https://img.shields.io/travis/paramt/trackarma/master.svg?style=for-the-badge)](https://travis-ci.org/paramt/trackarma)
 [![CodeFactor](https://www.codefactor.io/repository/github/paramt/trackarma/badge/?style=for-the-badge)](https://www.codefactor.io/repository/github/paramt/trackarma)
