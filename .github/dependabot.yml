@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - paramt
+  ignore:
+  - dependency-name: matplotlib
+    versions:
+    - 3.4.0
+  - dependency-name: praw
+    versions:
+    - 7.1.0
+    - 7.1.1
+    - 7.1.2
